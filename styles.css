@@ -1,0 +1,64 @@
+/* Simple, clean branding for Maryam Saidu Sarkin'ya */
+:root{
+  --accent:#0b5b8a;
+  --accent-2:#0e7db1;
+  --muted:#555;
+  --bg:#ffffff;
+  --card:#f7fbff;
+  --radius:14px;
+  --maxw:960px;
+}
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #f6fbff 0%, #ffffff 100%);
+  color:#222;
+  margin:0;
+  padding:40px 20px;
+  display:flex;
+  justify-content:center;
+}
+.container{
+  max-width:var(--maxw);
+  width:100%;
+  background:var(--card);
+  border-radius:18px;
+  box-shadow: 0 8px 30px rgba(14,40,60,0.08);
+  padding:36px;
+  border:1px solid rgba(10,40,70,0.04);
+}
+.header{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  margin-bottom:12px;
+}
+.photo{
+  width:140px;
+  height:140px;
+  border-radius:18px;
+  overflow:hidden;
+  flex-shrink:0;
+  box-shadow:0 6px 18px rgba(10,40,70,0.08);
+  border:4px solid #fff;
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.headline h1{margin:0;font-size:24px;color:var(--accent)}
+.headline p{margin:6px 0 0 0;color:var(--muted)}
+
+.section{margin-top:20px;padding-top:16px;border-top:1px dashed rgba(10,40,70,0.04)}
+.kv{display:flex;gap:12px;flex-wrap:wrap}
+.kv div{min-width:180px;color:var(--muted)}
+
+.skills{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.skill{background:rgba(11,91,138,0.08);padding:8px 12px;border-radius:10px;color:var(--accent);font-weight:600;font-size:13px}
+
+.projects ul, .experience ul {margin:8px 0 0 18px}
+.contact p{margin:6px 0;}
+
+.footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+@media(max-width:600px){
+  .header{flex-direction:row;align-items:center}
+  .photo{width:110px;height:110px}
+  .headline h1{font-size:20px}
+}
